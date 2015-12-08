@@ -11,7 +11,7 @@
     Statement st = con.createStatement();
     ResultSet rs;
     rs = st.executeQuery("SELECT * FROM member WHERE username = '" + username + "' AND passwd = '" + password + "'");
-    if(rs.next()) {
+    if (rs.next()) {
         session.setAttribute("username", username);
         response.sendRedirect("index.jsp");
     } else {
