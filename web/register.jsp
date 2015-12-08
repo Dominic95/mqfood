@@ -10,27 +10,27 @@
 <jsp:include page="_head.jsp"></jsp:include>
 <hr>
 
-<div class="register">
+<div class="container">
     <div class="row">
         <div class="col-sm-12">
             <form class="form-horizontal">
                 <div class="form-group">
-                    <label for="inputEmail3" class="col-sm-2 control-label">아이디</label>
+                    <label class="col-sm-2 control-label">아이디</label>
 
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="아이디">
+                        <input type="text" class="form-control" placeholder="아이디">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">비밀번호</label>
+                    <label class="col-sm-2 control-label">비밀번호</label>
 
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
+                        <input type="password" class="form-control" placeholder="비밀번호">
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="inputPassword3" class="col-sm-2 control-label">생년월일</label>
+                    <label class="col-sm-2 control-label">생년월일</label>
 
                     <div class="col-sm-10">
                         <select>

@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset-UTF-8" pageEncoding="UTF-8" %>
+
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -25,13 +28,13 @@
             </ul>
         </div>
     </div>
-    <img class="logo" src="images/mqfood.png">
+    <a href="/index.jsp"><img class="logo" src="images/mqfood.png"></a>
 </header>
 <nav>
     <div class="container">
         <ul class="nav nav-justified">
             <li><a href="#">소개</a></li>
-            <li><a href="#">레시피</a></li>
+            <li><a href="recipe.jsp">레시피</a></li>
             <li><a href="#">커뮤니티</a></li>
         </ul>
     </div>
