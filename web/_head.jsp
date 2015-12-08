@@ -33,7 +33,7 @@
 <nav>
     <div class="container">
         <ul class="nav nav-justified">
-            <li><a href="#">소개</a></li>
+            <li><a href="info.jsp">소개</a></li>
             <li><a href="recipe.jsp">레시피</a></li>
             <li><a href="#">커뮤니티</a></li>
         </ul>
