@@ -17,24 +17,24 @@
         <div class="register">
             <div class="row">
                 <div class="col-sm-12">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" method="post" action="auth.jsp">
                         <div class="form-group">
-                            <label for="inputEmail3" class="col-sm-2 control-label">아이디</label>
+                            <label class="col-sm-2 control-label">아이디</label>
 
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="아이디">
+                                <input type="text" class="form-control" name="username" placeholder="아이디">
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">비밀번호</label>
+                            <label class="col-sm-2 control-label">비밀번호</label>
 
                             <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
+                                <input type="password" class="form-control"  name="password" placeholder="비밀번호">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label for="inputPassword3" class="col-sm-2 control-label">생년월일</label>
+                            <label class="col-sm-2 control-label">생년월일</label>
 
                             <div class="col-sm-10">
                                 <select>

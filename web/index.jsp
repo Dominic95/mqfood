@@ -20,8 +20,12 @@
     <div class="header">
         <div class="container">
             <ul class="list-unstyled list-inline pull-right">
+                <% if(session.getAttribute("username") == null || session.getAttribute("username") == "") { %>
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
+                <% } else {%>
+                어서오세요, <%=session.getAttribute("username")%>
+                <% } %>
             </ul>
         </div>
     </div>
@@ -80,19 +84,19 @@
 
                 </div>
                 <div class="col-sm-6">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="loginProcess.jsp" method="post">
                         <div class="form-group">
                             <label for="inputEmail3" class="col-sm-2 control-label">아이디</label>
 
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputEmail3" placeholder="아이디">
+                                <input type="text" class="form-control" name="username" placeholder="아이디">
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="inputPassword3" class="col-sm-2 control-label">비밀번호</label>
 
                             <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="비밀번호">
+                                <input type="password" class="form-control" name="password" placeholder="비밀번호">
                             </div>
                         </div>
                         <div class="form-group">
