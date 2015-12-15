@@ -13,19 +13,19 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="auth.jsp" method="post">
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">아이디</label>
+                    <label name="username" class="col-sm-2 control-label">아이디</label>
 
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" placeholder="아이디">
+                        <input type="text" class="form-control" name="username" placeholder="아이디">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 control-label">비밀번호</label>
+                    <label name="password" class="col-sm-2 control-label">비밀번호</label>
 
                     <div class="col-sm-10">
-                        <input type="password" class="form-control" placeholder="비밀번호">
+                        <input type="password" class="form-control" name="password" placeholder="비밀번호">
                     </div>
                 </div>
 
@@ -60,6 +60,28 @@
                             <option>07</option>
                             <option>08</option>
                             <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
                         </select>
                     </div>
                 </div>

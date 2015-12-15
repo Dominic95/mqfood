@@ -29,6 +29,6 @@
     } catch (Exception e) {
         out.println(e);
     }
-//    response.sendRedirect("index.jsp");
+    response.sendRedirect("welcome.jsp");
 %>
 

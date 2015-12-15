@@ -1,60 +1,41 @@
+<%@ page import="java.sql.*" %>
 <%@ page language="java" contentType="text/html; charset-UTF-8" pageEncoding="UTF-8" %>
 
 <jsp:include page="_head.jsp"></jsp:include>
+
+<%
+Class.forName("com.mysql.jdbc.Driver");
+String url = "jdbc:mysql://localhost:3306/mqdb";
+Connection con = DriverManager.getConnection(url, "root", "");
+
+Statement st = con.createStatement();
+ResultSet rs;
+rs = st.executeQuery("SELECT * FROM recipe");
+%>
 
 <section>
     <div class="container">
 
         <div class="row">
             <ul class="list-unstyled _box_wrap">
+                <%
+                    while(rs.next()) {
+                        String id = rs.getString("id");
+                        String title = rs.getString("title");
+                        String summary = rs.getString("summary");
+                        String attachment = rs.getString("attachment");
+                %>
                 <li class="_box">
-                    <img class="img-responsive" src="images/bn1.jpg">
+                    <a href="recipe_detail.jsp?id=<%=id%>">
+                    <img class="img-responsive" src="images/<%=attachment%>">
 
                     <div class="context">
-                        <h4>음식</h4>
-                        <h5>간단하게 할 수 있는 저염식, 웰빙푸드</h5>
+                        <h4><%=title%></h4>
+                        <h5><%=summary%></h5>
                     </div>
+                    </a>
                 </li>
-                <li class="_box">
-                    <img class="img-responsive" src="images/bn2.jpg">
-
-                    <div class="context">
-                        <h4>음식</h4>
-                        <h5>간단하게 할 수 있는 저염식, 웰빙푸드</h5>
-                    </div>
-                </li>
-                <li class="_box">
-                    <img class="img-responsive" src="images/bn3.jpg">
-
-                    <div class="context">
-                        <h4>음식</h4>
-                        <h5>간단하게 할 수 있는 저염식, 웰빙푸드</h5>
-                    </div>
-                </li>
-                <li class="_box">
-                    <img class="img-responsive" src="images/bn4.jpg">
-
-                    <div class="context">
-                        <h4>음식</h4>
-                        <h5>간단하게 할 수 있는 저염식, 웰빙푸드</h5>
-                    </div>
-                </li>
-                <li class="_box">
-                    <img class="img-responsive" src="images/bn5.jpg">
-
-                    <div class="context">
-                        <h4>음식</h4>
-                        <h5>간단하게 할 수 있는 저염식, 웰빙푸드</h5>
-                    </div>
-                </li>
-                <li class="_box">
-                    <img class="img-responsive" src="images/bn6.jpg">
-
-                    <div class="context">
-                        <h4>음식</h4>
-                        <h5>간단하게 할 수 있는 저염식, 웰빙푸드</h5>
-                    </div>
-                </li>
+                <% } %>
             </ul>
         </div>
     </div>

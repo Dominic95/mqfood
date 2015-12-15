@@ -27,7 +27,7 @@
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button type="submit" class="btn btn-success">로그인</button>
-                        <a href="#" class="btn btn-default">회원가입</a>
+                        <a href="register.jsp" class="btn btn-default">회원가입</a>
                     </div>
                 </div>
             </form>

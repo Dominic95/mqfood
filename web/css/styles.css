@@ -98,6 +98,10 @@ header .header li a {
     margin: 5px;
 }
 
+._box a {
+    color: #444444;
+}
+
 @media (min-width: 768px) {
     ._box {
         width: 30.333333%;

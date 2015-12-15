@@ -23,7 +23,8 @@
                 <li><a href="login.jsp">로그인</a></li>
                 <li><a href="register.jsp">회원가입</a></li>
                 <% } else {%>
-                어서오세요, <%=session.getAttribute("username")%>
+                <li>어서오세요, <%=session.getAttribute("username")%></li>
+                <li><a href="logout.jsp">로그아웃</a></li>
                 <% } %>
             </ul>
         </div>
